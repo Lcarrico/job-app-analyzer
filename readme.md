@@ -12,7 +12,7 @@ This application analyzes resumes and cover letters against job descriptions usi
 1. **Clone the Repository**  
    Clone the repository from GitHub:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Lcarrico/job-app-analyzer.git
    cd job-app-analyzer
    ```
 
