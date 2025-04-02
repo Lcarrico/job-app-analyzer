@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-import streamlit.components.v1 as components
 
 from utils.analyzer import analyze_texts_as_json
 from utils.scoring import score_resume_from_json, score_cover_letter_from_json
@@ -10,9 +9,6 @@ from utils.scoring import score_resume_from_json, score_cover_letter_from_json
 st.set_page_config(page_title="Resume & Cover Letter Analyzer", layout="wide")
 st.title("📄 Resume & Cover Letter Analyzer (GPT-4o + Visual Scoring)")
 
-components.html("""
-    <meta name='impact-site-verification' value='71c0ef9b-0e8a-4fb4-a426-55f2cda8d3bc'>
-""", height=0)
 
 api_key = st.text_input("🔑 OpenAI API Key", type="password")
 
